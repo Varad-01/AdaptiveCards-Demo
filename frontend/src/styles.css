@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.chat-window {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: linear-gradient(180deg, #f5f7fa 0%, #e4e7eb 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.message.user {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.message.bot {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.input-area {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.input-area button:hover {
+  background-color: #0056b3;
+}
+
+.adaptive-card {
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style Adaptive Card elements */
+.adaptive-card .ac-textBlock {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.adaptive-card .ac-textBlock[weight="bolder"] {
+  font-weight: 600;
+}
+
+.adaptive-card .ac-textBlock[isSubtle="true"] {
+  color: #666;
+  font-size: 14px;
+}
+
+.adaptive-card .ac-input {
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.adaptive-card .ac-choiceSetInput-compact {
+  margin-bottom: 10px;
+}
+
+.adaptive-card .ac-actionButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.adaptive-card .ac-actionButton:hover {
+  background-color: #0056b3;
+}
+
+.adaptive-card .ac-columnSet {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.adaptive-card .ac-column {
+  flex: 1;
+  text-align: center;
+  padding: 5px;
+}
+
+.adaptive-card .ac-column .ac-textBlock {
+  margin: 5px 0;
+}
